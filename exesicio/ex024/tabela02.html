@@ -8,13 +8,23 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            padding: 1px;
+
 
         }
 
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
 
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightslategray;
         }
 
         td,
@@ -28,8 +38,18 @@
             background-color: dimgrey;
             color: white;
         }
-        td.num{
+
+        td.num {
             text-align: right;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightslategray;
+        }
+        thead > tr > th{
+         position: sticky;
+         top: 1px;
+         background-color: dimgrey;
+         
         }
     </style>
 </head>
@@ -49,10 +69,13 @@
     TR,TH,TD
      -->
     <Table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
 
             </tr>
         </thead>
@@ -64,11 +87,11 @@
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="num"> 20 .538. 718	</td>
+                <td class="num"> 20 .538. 718 </td>
             </tr>
             <tr>
                 <td> Rio de Janeiro</td>
-                <td class="num"> 16 .054. 524	</td>
+                <td class="num"> 16 .054. 524 </td>
             </tr>
             <tr>
                 <td> Bhiha </td>
@@ -76,7 +99,7 @@
             </tr>
             <tr>
                 <td> Parana </td>
-                <td class="num"> 11 .444. 380	</td>
+                <td class="num"> 11 .444. 380 </td>
             </tr>
             <tr>
                 <td> Rio Grande do sul</td>
@@ -88,23 +111,23 @@
             </tr>
             <tr>
                 <td> Ceará </td>
-                <td class="num"> 8 .794. 957	</td>
+                <td class="num"> 8 .794. 957 </td>
             </tr>
             <tr>
                 <td> Pará </td>
-                <td class="num"> 8 .121. 025	</td>
+                <td class="num"> 8 .121. 025 </td>
             </tr>
             <tr>
                 <td> Santa Catarina</td>
-                <td class="num"> 7 .610. 361	</td>
+                <td class="num"> 7 .610. 361 </td>
             </tr>
             <tr>
                 <td> Goiass</td>
                 <td class="num"> 7 .056. 495 </td>
             </tr>
             <tr>
-               <td> Maranhão </td>
-               <td class="num"> 6 .775. 805 </td>
+                <td> Maranhão </td>
+                <td class="num"> 6 .775. 805 </td>
             </tr>
             <tr>
                 <td> Paraiba </td>
@@ -112,19 +135,19 @@
             </tr>
             <tr>
                 <td> Amazonas</td>
-                <td class="num"> 3 .941. 613	</td>
+                <td class="num"> 3 .941. 613 </td>
             </tr>
             <tr>
                 <td> Espirito Santo </td>
                 <td class="num"> 3 .833. 712 </td>
             </tr>
             <tr>
-               <td> Mato Grosso</td>
-               <td class="num"> 3 .658. 649	</td>
+                <td> Mato Grosso</td>
+                <td class="num"> 3 .658. 649 </td>
             </tr>
             <tr>
                 <td> Rio Grande do Norete</td>
-                <td class="num"> 3 .302. 729	</td>
+                <td class="num"> 3 .302. 729 </td>
             </tr>
             <tr>
                 <td> Piaui</td>
@@ -136,7 +159,7 @@
             </tr>
             <tr>
                 <td> Distrito Federal</td>
-                <td class="num"> 2 .817. 381	</td>
+                <td class="num"> 2 .817. 381 </td>
             </tr>
             <tr>
                 <td> Mato Grosso do Sul </td>
@@ -144,19 +167,19 @@
             </tr>
             <tr>
                 <td> Sergipe </td>
-                <td class="num"> 2 .209. 558	</td>
+                <td class="num"> 2 .209. 558 </td>
             </tr>
             <tr>
                 <td> Rodonia </td>
-                <td class="num"> 1 .581 .196	</td>
+                <td class="num"> 1 .581 .196 </td>
             </tr>
             <tr>
                 <td> Tocantis</td>
-                <td class="num"> 1 .511. 460	</td>
+                <td class="num"> 1 .511. 460 </td>
             </tr>
             <tr>
                 <td> Acre </td>
-                <td class="num"> 830. 018	</td>
+                <td class="num"> 830. 018 </td>
             </tr>
             <tr>
                 <td> Amapa </td>
@@ -164,13 +187,13 @@
             </tr>
             <tr>
                 <td> Roraima</td>
-                <td class="num"> 636. 707	</td>
+                <td class="num"> 636. 707 </td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th> Total de habitantes</th>
+                <th scope="row"> Total de habitantes</th>
                 <td class="num"><strong> 210.147.125</strong> </td>
             </tr>
         </tfoot>
